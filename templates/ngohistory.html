@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+       
+<title>ONLINE MEDICINE DONATION PORTAL</title>
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    table, th, td{
+        border: 1px solid #666;
+        border-color: white;
+    }
+    table th, table td{
+        padding: 10px;
+        /* Apply cell padding */
+        color: white;
+    }
+</style>
+</head>
+    <body>
+        <!-----Navigation Bar---->
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="#"><img src="{% static 'img/Logo.jpg'%}"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index"><i class="fa fa-home"></i>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about"><i class="fa fa-user"></i>About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="ourteam"><i class="fa fa-users"></i>Team</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="index"><i class="fa fa-sign-out"></i>Log Out</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </section>
+        <header>
+            <center>
+            <br><br><br>
+                <table border="2" >
+                    <tr class="table-dark" >
+                    <b>
+                        <th style="color:black">DONOR NAME</th>
+                        <th style="color:black">NAME OF THE MEDICINE</th>
+                        <th style="color:black">CONTACT NUMBER</th>
+                        <th style="color:black">PICK UP ADDRESS</th>
+                        <th style="color:black">PURPOSE</th>
+                        <th style="color:black">EXPIRY DATE</th>
+                        <th style="color:black">ACCEPTED BY</th>
+                    </b>
+                    </tr>
+                    {%for donors in donorlist%}
+                    <tr style="background-color:F0F8FF">
+                    <td>{{donors.donor_name}}</td>
+                    <td>{{donors.medicine_name}}</td>
+                    <td>{{donors.phone}}</td>
+                    <td>{{donors.pickup_address}}</td>
+                    <td>{{donors.purpose}}</td>
+                    <td>{{donors.expiry_date}}</td>
+                    <td>{{donors.accepted_by}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+        </center>
+           
+        </header>
+    </body>
+</html>
+   

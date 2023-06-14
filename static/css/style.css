@@ -1,0 +1,343 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+/*-----NAVIGATION------*/
+#nav-bar
+{
+position: sticky;
+top: 0;
+z-index: 10;
+
+}
+.navbar-brand img
+{
+height: 40px;
+padding-left: 30px;
+}
+ .navbar-nav li
+ {
+padding: 0 10px;
+
+ }
+  .navbar-nav li a
+ {
+float: right;
+text-align: left;
+
+ }
+ #nav-bar ul li a:hover
+ {
+ 	color: #007bff!important;
+ }
+ .navbar 
+ {
+ 	background:#202020;
+ }
+ .navbar-toggler
+ {
+ 	border: none!important;
+
+ }
+ .nav-link
+ {
+ 	color: #555!important;
+ 	font-weight: 600;
+ 	font-size: 16px;
+ }
+
+/*Button Part*/
+.btn:link,
+.btn:visited{
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+
+.hero-text-box{
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cf6d17;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/static/img/project1.PNG);
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+/*login page*/
+.loginbox
+{
+	width: 320px;
+	height: 490px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -30px;
+	left: calc(50% - 50px);
+}
+.loginbox h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px; 
+}
+.loginbox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="Password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.loginbox select
+{
+	width:100%;
+	margin-bottom: 15px;
+	font-size: 18px;
+	height: 25px;
+	cursor:pointer;
+	text-align: center;
+    display:inline-block;
+    position:relative;
+    font:normal 11px/22px Arial, Sans-Serif;
+    color:black;
+    border:1px solid #ccc;
+
+}
+.loginbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+
+}
+.loginbox a
+{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.loginbox a:hover
+{
+	color: #ffc107;
+}
+/*----SIGN UP AS DONOR----*/
+.wrap
+{
+	max-width: 350px;
+	border-radius: 20px;
+	margin: auto;
+	background: rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	padding: 40px;
+	color: #fff;
+	margin-top: 5px;
+	
+}
+.wrap h2
+{
+	text-align: center;
+}
+.wrap input[type="text"],input[type="Password"]
+{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px 5px;
+	background: rgba(0,0,0,0.10);
+	outline: none;
+	border:none;
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+	border-radius: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.wrap input[type="submit"]
+{
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	border:none;
+	padding: 10px 0;
+	margin-top: 30px;
+	background: #60adde;
+	opacity: 0.7;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #fff;
+}
+.wrap input[type="submit"]:hover
+{
+	background: #003366;
+	opacity: 0.7;
+}
+#btt
+{
+	border-radius: 10px;
+}
+/*------------Donorform-------------------*/
+.wrap input[type="date"]
+{
+width: 100%;
+background: #60adde;
+opacity: 0.7;
+
+font-size: 20px;
+color: #fff;
+}
+.wrap select
+{
+width: 100%;
+background: #60adde;
+opacity: 0.7;
+
+font-size: 20px;
+color: #fff;
+}
+.wrap input[type="date"]:hover
+{
+background: #003366;
+opacity: 0.7;
+}
+.wrap select:hover
+{
+background: #003366;
+opacity: 0.7;
+}
+.wrap h5
+{
+color: #A9A9A9;
+font-size: 18px;
+padding: 8px 6px;
+}
